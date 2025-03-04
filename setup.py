@@ -23,9 +23,9 @@ setup(
     install_requires=[
         "rich-argparse==1.0.0",
         "rich==13.0.1",
-        "mistune==0.8.4",
+        "mistune==3.1.2",
         "chardet==5.1.0",
-        "requests==2.31.0",
+        "requests==2.32.3",
         "PyYAML==6.0.1",
         "gitignorefile==1.1.2",
     ],
