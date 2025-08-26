@@ -104,6 +104,7 @@ def upsert_page(
                 update_message=page_message,
                 labels=page.labels if replace_all_labels else None,
                 minor_edit=minor_edit,
+                title=page.title
             )
             action = UpsertAction.UPDATED
         else:

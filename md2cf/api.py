@@ -66,6 +66,7 @@ class MinimalConfluence:
     def _request(self, method, path, **kwargs):
         r = self.api.request(method, urljoin(self.host, path), **kwargs)
         r.raise_for_status()
+
         return bunchify(r.json())
 
     def _get(self, path, **kwargs):
@@ -186,13 +187,14 @@ class MinimalConfluence:
         update_message=None,
         labels=None,
         minor_edit=False,
+        title=None,
     ):
         update_structure = {
             "version": {
                 "number": page.version.number + 1,
                 "minorEdit": minor_edit,
             },
-            "title": page.title,
+            "title": title if title is not None else page.title,
             "type": content_type,
             "body": {"storage": {"value": body, "representation": "storage"}},
         }
