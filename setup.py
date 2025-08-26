@@ -5,7 +5,7 @@ with open("README.md") as f:
 
 setup(
     name="md2cf",
-    version="2.3.0",
+    version="2.3.0b",
     packages=["md2cf"],
     url="https://github.com/iamjackg/md2cf",
     license="MIT",
@@ -22,7 +22,7 @@ setup(
     keywords="markdown confluence",
     install_requires=[
         "rich-argparse==1.0.0",
-        "rich==13.0.1",
+        "rich>=13.0.1",
         "mistune==3.1.2",
         "chardet==5.1.0",
         "requests>=2.32.3",
