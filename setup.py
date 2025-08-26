@@ -25,7 +25,7 @@ setup(
         "rich==13.0.1",
         "mistune==3.1.2",
         "chardet==5.1.0",
-        "requests==2.32.3",
+        "requests==2.32.4",
         "PyYAML==6.0.1",
         "gitignorefile==1.1.2",
     ],
